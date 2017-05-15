@@ -1,0 +1,18 @@
+{
+    "name": "nicolasleroy/architecture_de_votre_region",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "YorelN",
+            "email": "nicolas.leroy971@hetic.net"
+        }
+    ],
+    "require": {
+        "symfony/var-dumper": "^3.2"
+    },
+    "autoload": {
+        "psr-4":{
+            "Classes\\": "Class/"
+        }
+    }
+}
