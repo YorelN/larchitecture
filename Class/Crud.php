@@ -7,9 +7,11 @@
  * Time: 11:16
  */
 
-namespace Classes;
+require_once 'DbConfig.php';
+
 
 class Crud extends DbConfig
+
 {
 	/**
 	 * Crud constructor.
@@ -19,6 +21,9 @@ class Crud extends DbConfig
 		parent::__construct();
 	}
 
+
+
+
 	public function getData($query)
 	{
 		$result = $this->connection->query($query);
@@ -27,28 +32,23 @@ class Crud extends DbConfig
 			return false;
 		}
 
-		$rows = array();
-
-		while ($row = $result->fetch_assoc()) {
-			$rows[] = $row;
-		}
-
-		return $rows;
+		return $result;
 	}
 
-	public function execute($query)
+
+	public function create( $table, $query)
 	{
-		$result = $this->connection->query($query);
 
-		if ($result == false) {
-			echo 'Error: cannot execute the command';
-			return false;
-		} else {
-			return true;
-		}
 	}
 
-	public function delete($id, $table)
+	/**
+	 * @param $id
+	 * @param $table
+	 *
+	 * @return bool
+	 */
+
+	public function delete($table, $id)
 	{
 		$query = "DELETE FROM $table WHERE id = $id";
 
@@ -62,9 +62,4 @@ class Crud extends DbConfig
 		}
 	}
 
-	public function escape_string($value)
-	{
-		return $this->connection->real_escape_string($value);
-	}
 }
-?>

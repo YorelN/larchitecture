@@ -6,14 +6,13 @@
  * Time: 11:02
  */
 
-namespace Classes;
 
 class DbConfig
 {
 	private $_host          = 'localhost';
 	private $_username      = 'root';
 	private $_password      = 'root';
-	private $_database      = 'test';
+	private $_database      = 'larchitecture_de_votre_region';
 
 	protected $connection;
 
@@ -22,11 +21,10 @@ class DbConfig
 	{
 		try
 		{
-			$pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-			$this->connection = new PDO ( $this->_host, $this->_username, $this->_password, $this->_database, $pdo_options);
+			$this->connection = new PDO("mysql:host=". $this->_host .";dbname=" . $this->_database, $this->_username, $this->_password);
 		}
 
-		catch (Exception $exception)
+		catch (PDOException $exception)
 		{
 			die('Erreur mamène : ' . $exception->getMessage());
 		}
