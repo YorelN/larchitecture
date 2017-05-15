@@ -36,8 +36,16 @@ class Crud extends DbConfig
 	}
 
 
-	public function create( $table, $query)
+
+
+
+
+
+	public function create($query)
 	{
+		$result = $this->connection->query($query);
+
+		return $result;
 
 	}
 

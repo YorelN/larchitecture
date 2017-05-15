@@ -8,7 +8,3 @@
  */
 namespace Classes;
 
-class Inscription extends dbConfig
-{
-
-}
