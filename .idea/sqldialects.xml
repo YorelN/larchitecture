@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/Class/Crud.php" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/config/db.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/views/index.php" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/views/indexAdmin.php" dialect="MySQL" />
   </component>
 </project>

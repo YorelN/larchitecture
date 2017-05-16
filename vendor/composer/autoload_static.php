@@ -17,9 +17,9 @@ class ComposerStaticInitba786deb6352e31f3bd0f5fcbec46a9b
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
-        'H' => 
+        'C' => 
         array (
-            'Hetic\\' => 6,
+            'Classes\\' => 8,
         ),
     );
 
@@ -32,9 +32,19 @@ class ComposerStaticInitba786deb6352e31f3bd0f5fcbec46a9b
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
-        'Hetic\\' => 
+        'Classes\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src',
+            0 => __DIR__ . '/../..' . '/Class',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
         ),
     );
 
@@ -43,6 +53,7 @@ class ComposerStaticInitba786deb6352e31f3bd0f5fcbec46a9b
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitba786deb6352e31f3bd0f5fcbec46a9b::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitba786deb6352e31f3bd0f5fcbec46a9b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitba786deb6352e31f3bd0f5fcbec46a9b::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
