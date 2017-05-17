@@ -6,9 +6,9 @@
  * Time: 11:24
  */
 require_once '../../vendor/autoload.php';
-use Classes\CrudMagazines;
+use Crud\CrudMagazines;
 
-$crud = new \Classes\CrudMagazines();
+$crud = new CrudMagazines();
 
 $crud->delete('magasine', $_GET['id']);
 

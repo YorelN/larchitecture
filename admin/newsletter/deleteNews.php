@@ -6,9 +6,9 @@
  * Time: 11:24
  */
 require_once '../../vendor/autoload.php';
-use Classes\CrudNewsLetter;
+use Crud\CrudNewsLetter;
 
-$crud = new \Classes\CrudNewsLetter();
+$crud = new CrudNewsLetter();
 
 $crud->delete('newsletter', $_GET['id']);
 

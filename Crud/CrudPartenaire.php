@@ -1,5 +1,5 @@
 <?php
-namespace Classes;
+namespace Crud;
 /**
  * Created by PhpStorm.
  * User: NicolasLEROY
@@ -7,7 +7,7 @@ namespace Classes;
  * Time: 11:16
  */
 
-class CrudMagazines extends ConnectDB
+class CrudPartenaire extends ConnectDB
 
 {
 	/**
@@ -21,6 +21,7 @@ class CrudMagazines extends ConnectDB
 	public function getData($query)
 	{
 		$result = self::getConnection()->query($query);
+
 		if ($result == false) {
 			return false;
 		}
@@ -31,11 +32,11 @@ class CrudMagazines extends ConnectDB
 
 	public function create()
 	{
-		$query = "INSERT INTO `magasine` (titre, img, zones) VALUES (:titre, :img, :zones)";
+		$query = "INSERT INTO `partnaire` (secteur, nom, codepostal) VALUES (:secteur, :nom, :codepostal)";
 		$result = self::getConnection()->prepare($query);
-		$result->bindValue(':titre', htmlentities($_POST['titre']));
-		$result->bindValue(':img', htmlentities($_POST['img']));
-		$result->bindValue(':zones', htmlentities($_POST['zones']));
+		$result->bindValue(':secteur', htmlentities($_POST['secteur']));
+		$result->bindValue(':nom', htmlentities($_POST['nom']));
+		$result->bindValue(':codepostal', htmlentities($_POST['codepostal']));
 		$result->execute();
 	}
 
@@ -63,11 +64,11 @@ class CrudMagazines extends ConnectDB
 
 	public function update()
 	{
-		$query = "UPDATE magasine SET titre = :titre, img = :img, zones= :zones WHERE id = :id";
+		$query = "UPDATE partnaire SET secteur = :secteur, nom = :nom, codepostal = :codepostal  WHERE id = :id";
 		$result = self::getConnection()->prepare($query);
-		$result->bindValue(':titre', htmlentities($_POST['titre']));
-		$result->bindValue(':img', htmlentities($_POST['img']));
-		$result->bindValue(':zones', htmlentities($_POST['zones']));
+		$result->bindValue(':secteur', htmlentities($_POST['secteur']));
+		$result->bindValue(':nom', htmlentities($_POST['nom']));
+		$result->bindValue(':codepostal', htmlentities($_POST['codepostal']));
 		$result->bindValue(':id', htmlentities($_GET['id']));
 		$result->execute();
 	}

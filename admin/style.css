@@ -135,3 +135,23 @@ input:focus {
     margin: 0 auto;
     border-radius: 33px;
 }
+
+.blue_btn {
+    border: 2px solid transparent;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    background: #1490ff;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 100%;
+}

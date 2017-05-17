@@ -6,9 +6,9 @@
  * Time: 11:24
  */
 require_once '../../vendor/autoload.php';
-use Classes\CrudPartenaire;
+use Crud\CrudPartenaire;
 
-$crud = new \Classes\CrudPartenaire();
+$crud = new CrudPartenaire();
 
 $crud->delete('partnaire', $_GET['id']);
 

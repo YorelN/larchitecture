@@ -1,10 +1,10 @@
 <?php
 
 require_once '../../vendor/autoload.php';
-use Classes\CrudMagazines;
+use Crud\CrudMagazines;
 if(!empty($_POST))
 {
-	$crud = new Classes\CrudMagazines();
+	$crud = new CrudMagazines();
 	$crud->update();
 	header('Location: ../index.php?p=listeMag');
 	exit();

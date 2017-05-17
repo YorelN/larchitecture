@@ -1,5 +1,6 @@
 <?php
-namespace Classes;
+namespace Crud;
+;
 /**
  * Created by PhpStorm.
  * User: NicolasLEROY

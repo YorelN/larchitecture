@@ -20,14 +20,14 @@ if (!$_SESSION)
 
 
 require_once '../vendor/autoload.php';
-use Classes\CrudMagazines;
+use Crud\CrudPartenaire;
+use Crud\CrudMagazines;
+use Crud\CrudNewsLetter;
 
 
-
-
-$crudPart = new \Classes\CrudPartenaire();
+$crudPart = new CrudPartenaire();
 $crudMag = new CrudMagazines();
-$crudNews = new \Classes\CrudNewsLetter();
+$crudNews = new CrudNewsLetter();
 
 $page = 'home';
 if (isset($_GET['p'])) $page = $_GET['p'];
