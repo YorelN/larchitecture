@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+/*----------------  RESET -----------------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,feldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.clearfix:before,.clearfix:after {
+    content: ' ';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+    overflow: hidden;
+}
+
+/* ------- Import des fonts --------*/ 
+@font-face {
+    font-family: Gotham-Bold;
+    src: url(../fonts/Gotham-Bold.otf);
+}
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../fonts/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../fonts/Gotham-Light.otf);
+}
+
+body {
+    margin-top: 100px;
+}
+
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article_actu {
+    padding-top: 120px;
+}
+
+.article_actu .left {
+    float: left;
+}
+
+.article_actu .right {
+    float: right;
+}
+
+
+div.text {
+    width: 50%;
+    height: auto;
+    padding: 0 3% 0 3%;
+}
+
+div.imagery {
+    position: relative;
+    width: 50%;
+}
+
+.img-actu {
+    width: 100%;
+    height: auto;
+}
+
+div.underground-img {
+    position: absolute;
+    width: 90%;
+    height:90%;
+    background-color: #DEF9FE;
+    z-index: -1;
+    top:-30px;
+}
+
+.left div.underground-img {
+    right: -30px;
+}
+
+.right div.underground-img {
+    left: -30px;
+}
+
+
+.les_actualites h3.actu-title {
+    font-family: Gotham-Medium;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+.les_actualites .actu-underline {
+    margin-top: 5px;
+    margin-left: 63%;
+    height: 3px;
+    width: 40px;
+    background-color: #32D8F8;
+}
+
+h4.subhead {
+    display: inline-block;
+    margin-top: 5%;
+    font-size: 120%;
+  font-family: Gotham-Medium;  
+}
+
+span.date {
+    margin-top:5%;
+    font-family: Gotham-Book;
+    float: right;
+    color: #BCBCBC;
+}
+
+p.description, .button-more {
+    font-family: Gotham-Book;
+    font-size: 100%;
+    float: right;
+}
+
+p.description {
+    margin-top: 2%;
+    line-height: 150%;
+}
+
+a.button-more {
+    margin-top: 5%;
+    color: #32D8F8;
+    text-decoration: underline;
+}
+
+a.button-more:hover {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 650px) {
+    section {
+    width: 85%;
+    margin: 0 auto;
+    }
+    
+    .article_actu {
+    padding-top: 60px;
+    }
+    
+    div.text {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    }
+
+    div.imagery {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    }
+    .underground-img {
+        display: none;
+    }
+    
+    a.button-more {
+    margin-top: 10px;
+    }
+    
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+
+    section {
+    width: 85%;
+    margin: 0 auto;
+    }
+    
+    div.text {
+    width: 100%;
+    height: auto;
+    padding: 0 0 0 0;
+    }
+
+    div.imagery {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    }
+    .underground-img {
+        display: none;
+    }
+    
+    a.button-more {
+    margin-top: 10px;
+    }
+
+}
+
+
+
