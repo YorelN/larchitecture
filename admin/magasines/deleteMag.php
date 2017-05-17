@@ -12,7 +12,7 @@ $crud = new \Classes\CrudMagazines();
 
 $crud->delete('magasine', $_GET['id']);
 
-header('Location: listeMagazines.php');
+header('Location: ../index.php?p=listeMag');
 
 
 

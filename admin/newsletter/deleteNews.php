@@ -12,7 +12,7 @@ $crud = new \Classes\CrudNewsLetter();
 
 $crud->delete('newsletter', $_GET['id']);
 
-header('Location: listeNewsletter.php');
+header('Location: ../index.php?p=listeNews');
 
 
 
