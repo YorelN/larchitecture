@@ -5,8 +5,8 @@ use Classes\CrudPartenaire;
 if(!empty($_POST))
 {
 	$crud = new Classes\CrudPartenaire();
-	$crud->update();
-	header('Location: listePartenaires.php');
+	$crud->create();
+	header('Location: ../index.php?p=listePart');
 	exit();
 }
 
@@ -24,3 +24,4 @@ if(!empty($_POST))
 	<input type="submit">
 
 </form>
+

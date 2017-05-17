@@ -25,7 +25,7 @@ $result = $crud->getData($query);
 <h1 style="text-align: center; font-size: 3em">List Mag</h1>
 <a href="../logout.php">Déconnexion</a>
 
-<a href="addNews.php">Ajouter</a>
+<a href="../newsletter/addNews.php">Ajouter</a>
 
 <table style="width: 50%; margin: 0 auto; text-align: center">
 	<tr>
@@ -45,8 +45,8 @@ $result = $crud->getData($query);
 			<td><?= $row['mail'] ?></td>
             <td><?= $row['telephone'] ?></td>
             <td><?= $row['service'] ?></td>
-            <td><a href="deleteNews.php?id=<?= $row['id'] ?>">Supprimer</a></td>
-			<td><a href="updateNews.php?id=<?= $row['id'] ?>">Modifier</a></td>
+            <td><a href="../newsletter/deleteNews.php?id=<?= $row['id'] ?>">Supprimer</a></td>
+			<td><a href="../newsletter/updateNews.php?id=<?= $row['id'] ?>">Modifier</a></td>
 		</tr>
 	<?php endforeach; ?>
 

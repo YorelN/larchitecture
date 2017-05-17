@@ -132,7 +132,7 @@ class HtmlDumper extends CliDumper
 <script>
 Sfdump = window.Sfdump || (function (doc) {
 
-var refStyle = doc.createElement('style'),
+var refStyle = doc.createElement('styles'),
     rxEsc = /([.*+?^${}()|\[\]\/\\])/g,
     idRx = /\bsf-dump-\d+-ref[012]\w+\b/,
     keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl',
@@ -221,7 +221,7 @@ return function (root, x) {
     });
     a('mouseover', function (a, e, c) {
         if (c) {
-            e.target.style.cursor = "pointer";
+            e.target.styles.cursor = "pointer";
         } else if (a = idRx.exec(a.className)) {
             try {
                 refStyle.innerHTML = 'pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}';
@@ -353,7 +353,7 @@ return function (root, x) {
 };
 
 })(document);
-</script><style>
+</script><styles>
 pre.sf-dump {
     display: block;
     white-space: pre;
@@ -404,7 +404,7 @@ EOHTML
             $line .= 'pre.sf-dump'.('default' === $class ? ', pre.sf-dump' : '').' .sf-dump-'.$class.'{'.$style.'}';
         }
 
-        return $this->dumpHeader = preg_replace('/\s+/', ' ', $line).'</style>'.$this->dumpHeader;
+        return $this->dumpHeader = preg_replace('/\s+/', ' ', $line).'</styles>'.$this->dumpHeader;
     }
 
     /**

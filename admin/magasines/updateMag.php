@@ -6,7 +6,7 @@ if(!empty($_POST))
 {
 	$crud = new Classes\CrudMagazines();
 	$crud->update();
-	header('Location: listeMagazines.php');
+	header('Location: ../index.php?p=listeMag');
 	exit();
 }
 

@@ -12,7 +12,7 @@ $crud = new \Classes\CrudPartenaire();
 
 $crud->delete('partnaire', $_GET['id']);
 
-header('Location: listePartenaires.php');
+header('Location: ../index.php?p=listePart');
 
 
 

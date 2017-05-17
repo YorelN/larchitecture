@@ -5,21 +5,18 @@ use Classes\CrudNewsLetter;
 if(!empty($_POST))
 {
 	$crud = new Classes\CrudNewsLetter();
-	$crud->create();
-	header('Location: listeNewsletter.php');
+	$crud->update();
+	header('Location: ../index.php?p=listeNews');
 	exit();
 }
 
-
 ?>
-
-
 
 <form method="post">
 
-	<input type="text" name="prenom">
-	<input type="text" name="nom">
-	<input type="text" name="mail">
+    <input type="text" name="prenom">
+    <input type="text" name="nom">
+    <input type="text" name="mail">
     <input type="text" name="telephone">
     <input type="text" name="service">
 
@@ -27,4 +24,3 @@ if(!empty($_POST))
     <input type="submit">
 
 </form>
-

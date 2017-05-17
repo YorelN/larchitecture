@@ -12,7 +12,7 @@
         "twig/twig": "^2.3"
     },
     "autoload": {
-        "psr-4":{
+        "psr-4": {
             "Classes\\": "Class/"
         }
     }

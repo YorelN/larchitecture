@@ -97,7 +97,7 @@ class CliDumper extends AbstractDumper
     /**
      * Configures styles.
      *
-     * @param array $styles A map of style names to style definitions
+     * @param array $styles A map of styles names to styles definitions
      */
     public function setStyles(array $styles)
     {
@@ -379,13 +379,13 @@ class CliDumper extends AbstractDumper
     }
 
     /**
-     * Decorates a value with some style.
+     * Decorates a value with some styles.
      *
-     * @param string $style The type of style being applied
+     * @param string $style The type of styles being applied
      * @param string $value The value being styled
      * @param array  $attr  Optional context information
      *
-     * @return string The value with style decoration
+     * @return string The value with styles decoration
      */
     protected function style($style, $value, $attr = array())
     {

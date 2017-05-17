@@ -21,7 +21,6 @@ class CrudMagazines extends ConnectDB
 	public function getData($query)
 	{
 		$result = self::getConnection()->query($query);
-
 		if ($result == false) {
 			return false;
 		}
