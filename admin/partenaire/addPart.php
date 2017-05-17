@@ -1,10 +1,10 @@
 <?php
 
 require_once '../../vendor/autoload.php';
-use Classes\CrudPartenaire;
+use Crud\CrudPartenaire;
 if(!empty($_POST))
 {
-	$crud = new Classes\CrudPartenaire();
+	$crud = new CrudPartenaire();
 	$crud->create();
 	header('Location: ../index.php?p=listePart');
 	exit();

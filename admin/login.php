@@ -1,6 +1,6 @@
 <?php
 session_start();
-use Classes\ConnectAdmin;
+use Crud\ConnectAdmin;
 require_once '../vendor/autoload.php';
 
 if ($_SESSION) {
@@ -36,6 +36,9 @@ if (isset($_POST) && count($_POST) > 0)
 <body class="loginAdmin">
 <main>
     <div class="login">
+        <div class="blue_btn">
+            <a href="">Retourner sur le site</a>
+        </div>
         <div class="login-screen">
             <div class="app-title">
             </div>

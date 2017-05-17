@@ -1,10 +1,10 @@
 <?php
 
 require_once '../../vendor/autoload.php';
-use Classes\CrudNewsLetter;
+use Crud\CrudNewsLetter;
 if(!empty($_POST))
 {
-	$crud = new Classes\CrudNewsLetter();
+	$crud = new CrudNewsLetter();
 	$crud->create();
 	header('Location: ../index.php?p=listeNews');
 	exit();

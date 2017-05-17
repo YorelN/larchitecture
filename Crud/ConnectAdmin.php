@@ -6,7 +6,7 @@
  * Time: 18:28
  */
 
-namespace Classes;
+namespace Crud;
 require_once '../vendor/autoload.php';
 
 class ConnectAdmin
