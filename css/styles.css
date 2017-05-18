@@ -96,7 +96,7 @@ h2.actu-title {
     width: 100%;
     font-family: Gotham-Medium;
     text-transform: uppercase;
-    font-size: 120%;
+    font-size: 100%;
     letter-spacing: 1px;
 }
 
@@ -448,13 +448,8 @@ h5 a {
     width: 100%;
 }
 
-.a_propos main section{
-    width: 60%;
-    margin: 5em auto 1em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+.a_propos section{
+    padding: 6%;
 }
 
 .a_propos main section article{
@@ -462,9 +457,11 @@ h5 a {
 }
 
 .a_propos section > article > figure > img{
-    background: black;
-    float: left;
-    margin-right: 2em;
+    width: 6%;
+}
+
+.a_propos section > article > figure {
+    text-align: center;
 }
 
 .a_propos .description{
@@ -481,16 +478,6 @@ h5 a {
     margin-bottom: 59px;
 }
 
-.a_propos .titre p:first-child{
-    width: 100%;
-    margin-left: 7em;
-}
-
-.a_propos .titre p:last-child{
-    padding-top: 2em;
-    width: 100%;
-    margin-left: 7em;
-}
 
 
 
