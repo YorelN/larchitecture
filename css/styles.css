@@ -144,6 +144,10 @@ header{
 .picto-nav {
     width: 50%;
 }
+
+.closed {
+    display: none;
+}
 header div:nth-of-type(1){
     width: 20%;
     float: left;
@@ -804,7 +808,8 @@ div.entreprise, div.equipe{
 
     #content-logo h1 {
         width: 50%;
-        margin: 0 auto;
+        margin: 0 0 0 50px;
+        position: relative;
     }
     /* HOMEPAGE */
 
@@ -814,7 +819,40 @@ div.entreprise, div.equipe{
     .fond {
         display: none;
     }
+    .burger{
+        position: absolute;
+        top:0;
+        right:0;
+    }
 
+    .burger img{
+        margin-top: 30px;
+        cursor: pointer;
+        display: block;
+        width: 50%;
+    }
+
+    .burger-menu ul {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        z-index: 30;
+        position: relative;
+        transition: 0.6s;
+        list-style-type: none;
+        background: white;
+    }
+
+    .burger-menu ul li{
+        text-align: center;
+        zline-height: 30px;
+        cursor: pointer;
+    }
+
+    .burger-menu ul li a {
+        text-transform: uppercase;
+        color: black;
+    }
     .accueil .visuel h3 {
         width: 80%;
         font-size: 24px;
