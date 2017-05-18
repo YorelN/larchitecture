@@ -588,6 +588,72 @@ a.button-more:hover {
     text-decoration: none;
 }
 
+/* ------------------------ PAGE DETAIL ACTU ------------------------ */
+
+main.detail_actu {
+
+    padding: 4%;
+
+}
+
+.detail_actu h3.subhead {
+
+    margin-top: 3%;
+
+}
+
+
+.accroche-actu p.en-tete {
+    padding-top: 20px;
+}
+
+.detail_actu p {
+    line-height: 30px;
+}
+
+.detail_actu .accroche-actu .imagery {
+    margin-left: 60px;
+}
+
+.detail_actu .details_actu {
+    font-family: Gotham-Book;
+    font-size: 100%;
+    line-height: 150%;
+}
+
+.detail_actu p.en-tete {
+    clear: left;
+}
+
+.detail_actu .img-galerie figure {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+.detail_actu div.img-galerie {
+    margin: 5% 0;
+    width: 100%;
+    float: right;
+}
+
+.detail_actu .img-galerie img {
+    width: 100%;
+    padding: 2%;
+}
+.detail_actu article.last figure{
+    float: right;
+    width: 33%;
+    padding-left: 20px;
+}
+.detail_actu article.last figure img {
+    width: 100%;
+    height: auto;
+}
+
+.detail_actu article.last {
+    width: 100%;
+}
 
 
 /* ______________________________ RESPONSIV ______________________________*/
@@ -760,6 +826,29 @@ a.button-more:hover {
 
     a.button-more {
         margin-top: 10px;
+    }
+
+
+    /* page détails 1 actu */
+
+    .detail_actu .img-galerie figure {
+        width: 100%;
+    }
+
+    .img-galerie img {
+        padding: 0;
+    }
+
+
+   figure#full{
+        width: 100%;
+        padding-left: 0;
+        padding: 2%;
+    }
+
+    #full img{
+        padding-left: 0px;
+        width: 100%;
     }
 
 
