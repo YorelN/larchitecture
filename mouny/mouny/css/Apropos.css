@@ -1,0 +1,138 @@
+@charset="utf-8";
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../fonts/Gotham-Book.otf");
+}
+@font-face {
+    font-family: "GOTHAM-LIGHT_0";
+    src: url("../fonts/GOTHAM-LIGHT_0.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'GOTHAM-LIGHT_0','Gotham-Book', 'Lato', 'sans-serif';
+}
+
+*:after,
+*:before{
+    content: "";
+    display: table;
+}
+
+
+.presentation{
+    position: relative;
+}
+
+.presentation h2{
+    position: absolute;
+    font-size: 4em;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+}
+
+.accroche{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+main{
+    width: 100%;
+}
+
+main section{
+    width: 60%;
+    margin: 5em auto 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section article{
+    width: 100%;
+}
+
+section > article > figure > img{
+    background: black;
+    float: left;
+    margin-right: 2em;
+}
+
+.description{
+    width: 100%;
+    margin: -50px auto 0;
+    padding-top: 47px;
+    padding-bottom: 27px;
+    background: #FFFFFF;
+}
+
+.titre{
+    display: block;
+    position: relative;
+    margin-bottom: 59px;
+}
+
+.titre p:first-child{
+    width: 100%;
+    margin-left: 7em;
+}
+
+.titre p:last-child{
+    padding-top: 2em;
+    width: 100%;
+    margin-left: 7em;
+}
+
+
+
+/********************************************************************/
+
+
+/*MEDIA-QUERIE*/
+
+
+/********************************************************************/
+
+
+
+@media only screen and (max-width: 650px) {
+   
+.presentation h2{
+
+    font-size: 2em;
+    top: 40%;
+}
+
+
+
+main section{
+    width: 90%;
+}
+
+
+section > article > figure{
+        text-align: center;
+    }
+    
+    
+section > article > figure > img{
+    float: none;
+    margin-bottom: 10%;
+}
+
+.titre p:first-child{
+    margin: 0;
+}
+
+.titre p:last-child{
+    margin: 0;
+}
+}

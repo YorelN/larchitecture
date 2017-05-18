@@ -1,0 +1,440 @@
+@charset="utf-8";
+@font-face {
+    font-family: "Gotham-Book";
+    src: url("../fonts/Gotham-Book.otf");
+}
+@font-face {
+    font-family: "GOTHAM-LIGHT_0";
+    src: url("../fonts/GOTHAM-LIGHT_0.otf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'GOTHAM-LIGHT_0','Gotham-Book', 'Lato', 'sans-serif';
+}
+
+*:after,
+*:before{
+    content: "";
+    display: table;
+}
+
+.content-title {
+    width: auto;
+    float: left;
+}
+
+
+h2.actu-title {
+    width: 100%;
+    font-family: Gotham-Medium;
+    text-transform: uppercase;
+    font-size: 120%;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.underline {
+    height: 3px;
+    width: 40px;
+    margin-top: 5px;
+    background-color: #32D8F8;
+    float: right
+}
+
+
+.presentation{
+    position: relative;
+}
+
+.accroche{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.couv_mag{
+    width: 35%;
+    position: absolute;
+    height: 25em;
+    bottom: 2em;
+    right: 2em;
+}
+
+.couv_mag figure{
+    padding: 0;
+    width: 40%;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+}
+
+.couv_mag figure img{
+    width: 100%;
+    margin: 0;
+}
+
+.desc{
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    padding: 2% 8% 8% ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.desc h4{
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    left: 0;
+    bottom: 9%;
+    width: 100%;
+}
+
+.desc > .titre{
+    width: 88px;
+    position: relative;
+    margin-top: -5%;
+    display: table;
+}
+
+.desc > .titre > hr{
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.desc p{
+    display: inline-block;
+    width: 40%;
+    font-size: .8em;
+    padding-top: 10%;
+}
+
+
+main{
+    width: 100%;
+}
+
+main section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.one{
+    position: relative;
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+
+.one img:nth-child(3){
+    position: absolute;
+    right: 5em;
+    top: 3.5em;
+    display: none;
+    width: 2%;
+}
+
+.one img:nth-child(2){
+     position: absolute;
+    right: 5em;
+    top: 3.5em;
+    display: block;
+}
+
+.one > h2{
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 59px;
+}
+
+.filter{
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 23em;
+    
+}
+
+.filter div{
+    width: 33.333%;
+    position: relative;
+    padding-top: 4em;
+   
+}
+
+.filter div .cent{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    display: block;
+    position: absolute;
+    top: 0;
+}
+
+.filter div .cent h3{
+    display: inline-block;
+    border-bottom: ;
+}
+
+.filter div a{
+    text-decoration: none;
+    color: #5C5B5B;
+    line-height: 1.5em;
+}
+
+.filter div a:hover{
+    color: #31D8F9;
+}
+
+.filter .col1{
+    -moz-column-count: 2;
+    -moz-column-gap: 1em;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 1em;
+    column-count: 2;
+    column-gap: 2;
+}
+
+.filter .col2,
+.filter .col3{
+    text-align: center;
+    width: 20em;
+}
+
+main section article{
+    display: inline-block;
+    width: 30%;
+    margin: 10px 30px 10px 0px;
+}
+
+section > article > figure > img{
+    width: 85%;
+    display: block;
+    margin: auto;
+}
+
+section article figure figcaption{
+    text-align: center;
+    font-size: 48px;
+    margin-top: -30px;
+}
+
+
+.description{
+    display: table;
+    width: 100%;
+    margin: -50px auto 0;
+    padding-top: 47px;
+    padding-bottom: 27px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 13px 0 rgba(184,184,184,0.50);
+}
+
+.titre{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 5%;
+    position: relative;
+}
+
+section article h2{
+    display: inline-block;
+    font-size: 1em;
+    flex: 1;
+}
+
+main hr{
+    border-color: black;
+    width: 2vw;
+    position: absolute;
+    bottom: 1vh;
+}
+
+.visible{
+    display: inline-block;
+}
+
+
+.command{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.description button{
+    border: 2px solid #31D8F9;
+    background-color: #ffffff;
+    padding: .7em .5em;
+    width: 6,5em;
+    margin-left: .9em;
+   margin-right: .9em;
+}
+
+.description a{
+    color: #31D8F9;
+    text-decoration: none;
+}
+
+.description span{
+    display: inline-block;
+}
+
+   
+.page{
+    padding: 2em 0;
+    text-align: center;
+    display: block;
+}
+
+.page img:nth-child(1){
+    margin-right: 1em;
+}
+
+.page img:nth-child(2){
+    padding: 0 1em;
+}
+
+.page img:nth-child(3){
+    margin-left: 1em;
+}
+
+@media only screen and (min-width: 651px) and (max-width: 1000px) {
+    
+    
+    .presentation{
+        display: none;
+    }
+
+main section{
+    padding: 0;
+}
+    
+    
+.one > h2{
+    font-size: 1.5em;
+}
+    
+
+    .filter{
+    height: 22em;
+}
+
+.filter div .cent h3{
+    font-size: 1em;
+}
+
+.filter div a{
+    font-size: .7em;
+}
+
+.filter .col2,
+.filter .col3{
+    width: 20em;
+    width: 20%;
+}
+    
+    
+
+main section article{
+    width: 35%;
+}
+
+section > article > figure > img{
+    width: 100%;
+}
+
+section article figure figcaption{
+    font-size: 35px;
+    margin-top: -20px;
+    font-weight: bold;
+}
+
+section article h3{
+    font-size: .7em;
+}
+.visible{
+    width: 10%;
+}
+.description button{
+    padding: .35em .25em;
+}
+
+.description span{
+    font-size: .7em
+}
+}
+
+
+@media only screen and (max-width: 650px){
+    
+    
+    .presentation{
+        display: none;
+    }
+
+main section{
+    width: 90%;
+    display: block;
+}
+
+.one{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.one img:nth-child(2){
+    right: 5%;
+}
+
+.one > h2{
+    padding-left: 2%
+}
+
+.filter{
+    height: 80em;
+    
+}
+
+.filter div{
+    width: 100%;
+   
+}
+
+.filter div .cent h3{
+    width: 100%;
+    font-size: 2em;
+}
+
+.filter div a{
+  font-size: 1.2em;  
+}
+
+.filter .col2,
+.filter .col3{
+    width: 100%;
+}
+
+main section article{
+    display: block;
+    width: 100%;
+
+}
+}
