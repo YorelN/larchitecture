@@ -1040,7 +1040,7 @@ div.entreprise, div.equipe{
 
 
 }
-}
+
 
 
 @media screen and (min-width: 375px) and (max-width: 600px){
@@ -1219,6 +1219,7 @@ div.entreprise, div.equipe{
     }
     /* page des revues */
 
+
     .revues .presentation{
         display: none;
     }
@@ -1227,6 +1228,8 @@ div.entreprise, div.equipe{
         width: 90%;
         display: block;
     }
+
+
 
     .revues .one{
         display: flex;
@@ -1255,6 +1258,7 @@ div.entreprise, div.equipe{
         margin-top: -18px;
 
     }
+
 
 
 
