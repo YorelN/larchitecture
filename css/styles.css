@@ -655,6 +655,27 @@ main.detail_actu {
     width: 100%;
 }
 
+/* MENTIONS LEGALES */
+
+.mentions h3 {
+    font-size: 15px;
+    margin:20PX 0;
+    border-bottom: 1px solid #BCBCBC;
+    text-transform: capitalize;
+    font-family: Gotham-Medium;
+    color: rgb(50, 216, 248);
+}
+
+.mentions p {
+    line-height: 25px;
+}
+
+.mentions {
+    width: 80%;
+    margin: 2% auto;
+
+}
+
 
 /* ______________________________ RESPONSIV ______________________________*/
 
