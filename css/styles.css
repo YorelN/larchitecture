@@ -1,37 +1,139 @@
-*{
+@charset "utf-8";
+
+/*----------------  RESET -----------------*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,feldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
     margin: 0;
     padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+blockquote,q {
+    quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 *,
 *:before,
-*:after{
+*:after {
     box-sizing: border-box;
 }
-.clearfix:before,
-.clearfix:after {
-    content: " ";
+
+.clearfix:before,.clearfix:after {
+    content: ' ';
     display: table;
 }
 
 .clearfix:after {
     clear: both;
+    overflow: hidden;
+}
+
+/* ------- Import des fonts --------*/
+
+@font-face {
+    font-family: Gotham-Medium;
+    src: url(../fonts/Gotham-Medium.otf);
+}
+
+@font-face {
+    font-family: Gotham-Book;
+    src: url(../fonts/Gotham-Book.otf);
+}
+
+@font-face {
+    font-family: Gotham-Light;
+    src: url(../fonts/Gotham-Light.otf);
 }
 
 body {
-    font-family: Gotham;
+    font-family: Gotham-Book;
+}
+
+h1 {
+    cursor: pointer;
 }
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
+/* THEMES GENERAUX */
+
+/* titres */
+.content-title {
+    width: auto;
+    float: left;
+}
+
+h2.actu-title {
+    position: relative;
+    width: 100%;
+    font-family: Gotham-Medium;
+    text-transform: uppercase;
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+
+
+.test {
+
+    float: none;
+}
+
+.test2 {
+    display: inline;
+}
+
+.actu-title::after {
+    content:"";
+    width: 30px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background-color: #32D8F8;
+}
+
+
 /* HEADER */
+
 
 header{
     width: 100%;
     background: #000;
     height:100px;
     position: relative;
+}
+
+.picto-nav {
+    width: 50%;
 }
 header div:nth-of-type(1){
     width: 20%;
@@ -114,18 +216,18 @@ footer div h4 {
     text-align: center;
     margin-bottom: 1%;
     text-transform: uppercase;
-    font-weight: 800;
     letter-spacing: 2px;
+    font-family: Gotham-Medium;
 }
 
 footer div p {
+    line-height: 150%;
     color: white;
     text-align: center;
 }
 
 footer a {
     color: white;
-    font-weight: bold;
 }
 
 footer p a {
@@ -141,20 +243,12 @@ footer div ul li {
     margin: 0 1%;
 }
 
-.col50 {
+footer.col50 {
     width: 44%;
     color: white;
     margin: 2.5% 3%;
 }
 
-.liseret {
-    height: 1px;
-    width: 10%;
-    border-bottom: 1px solid white;
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
 
 h5 a {
     font-weight: lighter;
@@ -167,13 +261,15 @@ h5 a {
 /* PAGE ACCUEIL */
 
 .accueil .visuel {
-    background-image: url("../img-content/index/visuel.jpg");
+    background-image: url("../img-content/index/accroche.png");
     background-size: cover;
     background-position: center;
     height: 400px;
     position: relative;
 }
 .accueil .visuel h3 {
+    width: 60%;
+    font-size: 24px;
     font-weight: normal;
     letter-spacing: 3px;
     color: white;
@@ -215,6 +311,10 @@ h5 a {
 
 .accueil .content .article .wrapper-description {
     height: auto;
+}
+
+.description p {
+    margin-top: 20px;
 }
 
 .accueil .content .article .wrapper-description .description {
@@ -312,16 +412,92 @@ h5 a {
     margin-bottom: 40px;
 }
 
-/* PAGE DE CONNEXION */
+/* ---------------   PAGE DE CONNEXION   --------------- */
 
 .connexions .connexion {
     width: 50%;
     float: left;
 }
 
+
+
+/* ---------------  A PROPOS   --------------- */
+
+.a_propos .presentation{
+    position: relative;
+}
+
+.a_propos .presentation h2{
+    position: absolute;
+    font-size: 4em;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    top: 45%;
+}
+
+.a_propos .accroche-apropos{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+
+.a_propos main{
+    width: 100%;
+}
+
+.a_propos main section{
+    width: 60%;
+    margin: 5em auto 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.a_propos main section article{
+    width: 100%;
+}
+
+.a_propos section > article > figure > img{
+    background: black;
+    float: left;
+    margin-right: 2em;
+}
+
+.a_propos .description{
+    width: 100%;
+    margin: -50px auto 0;
+    padding-top: 47px;
+    padding-bottom: 27px;
+    background: #FFFFFF;
+}
+
+.a_propos .titre{
+    display: block;
+    position: relative;
+    margin-bottom: 59px;
+}
+
+.a_propos .titre p:first-child{
+    width: 100%;
+    margin-left: 7em;
+}
+
+.a_propos .titre p:last-child{
+    padding-top: 2em;
+    width: 100%;
+    margin-left: 7em;
+}
+
+
+
 /* RESPONSIV */
 
 @media screen and (min-width: 600px) and (max-width: 850px){
+
 
     .accueil .description {
         padding: 2%;
@@ -331,9 +507,43 @@ h5 a {
     .accueil .abonnement .description {
         bottom: -75px;
     }
+
+    footer div {
+        width: 100%;
+    }
+
+    footer div h4 {
+        margin-bottom: 2%;
+    }
+
+    footer .col50 {
+        vertical-align: bottom;
+        width: 44%;
+        color: white;
+        margin: 2.5% 3%;
+    }
+
+    footer div {
+        margin: 3% 0;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 600px){
+    #content-logo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #content-logo h1 {
+        width: 35%;
+        margin: 0 auto;
+    }
+
+    #none {
+        display: none;
+    }
+
     .accueil .description {
         padding: 2%;
         font-size: 11px;
@@ -341,12 +551,89 @@ h5 a {
     .accueil .abonnement .description {
         bottom: -60px;
     }
+
+    .content-title {
+        text-align: center;
+    }
+
+    .description .content-title h2.actu-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer div {
+        width: 100%;
+    }
+
+    footer div h4 {
+        margin-bottom: 2%;
+    }
+
+    footer .col50 {
+        vertical-align: bottom;
+        width: 44%;
+        color: white;
+        margin: 1% 3%;
+    }
+    footer div {
+        margin: 3% 0;
+    }
 }
 
 
 @media screen and (min-width: 375px) and (max-width: 500px){
+
+    footer div {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    footer div h4 {
+        margin-bottom: 2%;
+    }
+
+    footer .col50 {
+        vertical-align: bottom;
+        width: 44%;
+        color: white;
+        margin: 2.5% 3%;
+    }
+
+    footer div {
+        margin: 3% 0;
+    }
+
+    #content-logo {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #content-logo h1 {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+
+    #none {
+        display: none;
+    }
     .fond {
         display: none;
+    }
+
+    .accueil .visuel h3 {
+        width: 80%;
+        font-size: 24px;
+        font-weight: normal;
+        letter-spacing: 3px;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 40%;
+        transform: translateY(-60%);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .accueil .content .article .profondeur {
@@ -358,6 +645,22 @@ h5 a {
         width: 100%;
         margin-left: 0;
     }
+
+    h2.actu-title {
+        font-size:16px;
+    }
+
+    .content-title {
+        text-align: center;
+    }
+
+    .description .content-title h2.actu-title {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
 }
 
 
