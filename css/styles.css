@@ -591,17 +591,12 @@ a.button-more:hover {
 /* ------------------------ PAGE DETAIL ACTU ------------------------ */
 
 main.detail_actu {
-
     padding: 4%;
-
 }
 
 .detail_actu h3.subhead {
-
     margin-top: 3%;
-
 }
-
 
 .accroche-actu p.en-tete {
     padding-top: 20px;
@@ -655,6 +650,39 @@ main.detail_actu {
     width: 100%;
 }
 
+.detail_actu div.entreprise {
+    float: left;
+    display: block;
+}
+
+.equipe_entreprise {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+div.entreprise, div.equipe{
+    float: left;
+    width: 33.333333333%;
+}
+
+.equipe_entreprise ol {
+    margin-top: 15px;
+    font-size: 14px;
+    padding-right:20%;
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.equipe_entreprise span {
+    display: block;
+    text-align: center;
+    font-family: Gotham-Medium;
+    color: #32D8F8;
+    text-transform: uppercase;
+}
+
 /* MENTIONS LEGALES */
 
 .mentions h3 {
@@ -663,7 +691,6 @@ main.detail_actu {
     border-bottom: 1px solid #BCBCBC;
     text-transform: capitalize;
     font-family: Gotham-Medium;
-    color: rgb(50, 216, 248);
 }
 
 .mentions p {
@@ -672,9 +699,14 @@ main.detail_actu {
 
 .mentions {
     width: 80%;
-    margin: 2% auto;
+    margin: 40px auto;
 
 }
+
+
+
+
+
 
 
 /* ______________________________ RESPONSIV ______________________________*/
@@ -861,7 +893,7 @@ main.detail_actu {
     }
 
 
-   figure#full{
+    figure#full{
         width: 100%;
         padding-left: 0;
         padding: 2%;
@@ -871,6 +903,17 @@ main.detail_actu {
         padding-left: 0px;
         width: 100%;
     }
+
+
+    div.entreprise, div.equipe{
+        float: left;
+        width: 100%;
+    }
+
+    .equipe_entreprise ol {
+        padding-right:0%;
+    }
+
 
 
 
