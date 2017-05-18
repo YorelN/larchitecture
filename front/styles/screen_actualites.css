@@ -74,6 +74,28 @@ table {
     src: url(../fonts/Gotham-Light.otf);
 }
 
+/*------ THEMES GENERAUX ----*/
+
+/* TITRES BANDE BLEUE */
+h2.actu-title {
+    display: inline-block;
+    font-family: Gotham-Medium;
+    text-transform: uppercase;
+    font-size: 120%;
+    letter-spacing: 1px;
+}
+
+.actu-underline {
+    height: 3px;
+    width: 40px;
+    margin-top: 5px;
+    background-color: #32D8F8;
+}
+
+/* SOUS TITRES */
+
+/* TEXTE DESCRIPTION */
+
 body {
     margin-top: 100px;
 }
@@ -131,23 +153,18 @@ div.underground-img {
 }
 
 
-.les_actualites h3.actu-title {
-    font-family: Gotham-Medium;
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 5%;
-    font-size: 120%;
-    letter-spacing: 1px;
+.les_actualites h2.actu-title {
+    margin: 0 auto;
 }
+
 .les_actualites .actu-underline {
-    margin-top: 5px;
-    margin-left: 63%;
+    margin-left: 150px;
     height: 3px;
     width: 40px;
     background-color: #32D8F8;
 }
 
-h4.subhead {
+h3.subhead {
     display: inline-block;
     margin-top: 5%;
     font-size: 120%;
@@ -212,6 +229,23 @@ a.button-more:hover {
     margin-top: 10px;
     }
     
+    
+    /* page détails 1 actu */
+    
+    div.img-galerie figure {
+    width: 100%;
+    }
+    
+    .img-galerie img {
+    padding: 0;
+    }
+ 
+    
+    figure#full{
+        width: 100%;
+    }
+
+    
 }
 
 @media only screen and (min-width: 651px) and (max-width: 1000px) {
@@ -241,6 +275,57 @@ a.button-more:hover {
     }
 
 }
+
+
+/* PAGE DETAILS ACTUALITE */ 
+
+.accroche-actu .imagery {
+    margin-left: 60px;
+}
+
+.details_actu {
+    font-family: Gotham-Book;
+    font-size: 100%;
+    line-height: 150%;
+}
+
+.img-galerie figure {
+    display: block;
+    width: 33%;
+    float: left;
+}
+
+div.img-galerie {
+    margin: 5% 0;
+    width: 100%;
+    float: right;
+}
+
+.img-galerie img {
+    width: 100%;
+    padding: 2%;
+}
+article.last figure{
+    float: right;
+    width: 33%;
+}
+article.last figure img {
+    width: 100%;
+    height: auto;
+}
+
+
+article.last {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 
