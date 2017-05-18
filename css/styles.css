@@ -121,6 +121,15 @@ h2.actu-title {
     background-color: #32D8F8;
 }
 
+/* SOUS TITRES */
+
+h3.subhead {
+    clear:left;
+    float: left;
+    margin-top: 5%;
+    font-size: 100%;
+    font-family: Gotham-Medium;
+}
 
 /* HEADER */
 
@@ -480,11 +489,140 @@ h5 a {
 
 
 
+/* ----------------------ACTU ---------------------*/
 
-/* RESPONSIV */
+.actu main {
+    margin-top: 100px;
+    font-family: Gotham-Book;
+}
 
-@media screen and (min-width: 600px) and (max-width: 850px){
 
+.actu section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.article_actu {
+    padding-top: 120px;
+}
+
+.article_actu .left {
+    float: left;
+}
+
+.article_actu .right {
+    float: right;
+}
+
+
+.actu div.text {
+    width: 50%;
+    height: auto;
+    padding: 0 3% 0 3%;
+}
+
+div.imagery {
+    position: relative;
+    width: 50%;
+}
+
+.img-actu {
+    width: 100%;
+    height: auto;
+}
+
+div.underground-img {
+    position: absolute;
+    width: 90%;
+    height:90%;
+    background-color: #DEF9FE;
+    z-index: -1;
+    top:-30px;
+}
+
+.left div.underground-img {
+    right: -30px;
+}
+
+.right div.underground-img {
+    left: -30px;
+}
+
+
+.les_actualites h2.actu-title {
+    margin: 0 auto;
+}
+
+.les_actualites .actu-underline {
+    margin-left: 150px;
+    height: 3px;
+    width: 40px;
+    background-color: #32D8F8;
+}
+
+span.date {
+    margin-top:5%;
+    font-family: Gotham-Book;
+    float: right;
+    color: #BCBCBC;
+}
+
+p.description, .button-more {
+    font-family: Gotham-Book;
+    font-size: 100%;
+    float: right;
+}
+
+p.description {
+    margin-top: 2%;
+    line-height: 150%;
+}
+
+a.button-more {
+    margin-top: 5%;
+    color: #32D8F8;
+    text-decoration: underline;
+}
+
+a.button-more:hover {
+    text-decoration: none;
+}
+
+
+
+/* ______________________________ RESPONSIV ______________________________*/
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+
+
+    /* actu */
+
+    .actu section {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .actu div.text {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+    div.imagery {
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+    }
+    .actu .underground-img {
+        display: none;
+    }
+
+    a.button-more {
+        margin-top: 10px;
+    }
+
+
+    /* home */
 
     .accueil .description {
         padding: 2%;
@@ -515,61 +653,10 @@ h5 a {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 600px){
-    #content-logo {
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-    }
 
-    #content-logo h1 {
-        width: 35%;
-        margin: 0 auto;
-    }
+@media screen and (min-width: 375px) and (max-width: 600px){
 
-    #none {
-        display: none;
-    }
-
-    .accueil .description {
-        padding: 2%;
-        font-size: 11px;
-    }
-    .accueil .abonnement .description {
-        bottom: -60px;
-    }
-
-    .content-title {
-        text-align: center;
-    }
-
-    .description .content-title h2.actu-title {
-        width: 100%;
-        text-align: center;
-    }
-
-    footer div {
-        width: 100%;
-    }
-
-    footer div h4 {
-        margin-bottom: 2%;
-    }
-
-    footer .col50 {
-        vertical-align: bottom;
-        width: 44%;
-        color: white;
-        margin: 1% 3%;
-    }
-    footer div {
-        margin: 3% 0;
-    }
-}
-
-
-@media screen and (min-width: 375px) and (max-width: 500px){
-
+    /* footer */
     footer div {
         font-size: 14px;
         width: 100%;
@@ -600,7 +687,7 @@ h5 a {
         width: 50%;
         margin: 0 auto;
     }
-
+    /* HOMEPAGE */
 
     #none {
         display: none;
@@ -645,6 +732,36 @@ h5 a {
         width: 100%;
         text-align: center;
     }
+
+    /* ACTU */
+    .actu section {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .article_actu {
+        padding-top: 60px;
+    }
+
+    .actu div.text {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+
+    div.imagery {
+        margin-top: 30px;
+        position: relative;
+        width: 100%;
+    }
+    .actu .underground-img {
+        display: none;
+    }
+
+    a.button-more {
+        margin-top: 10px;
+    }
+
 
 
 
